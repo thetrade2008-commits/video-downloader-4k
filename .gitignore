@@ -1,0 +1,12 @@
+node_modules/
+info.json
+*.wrong-backup
+.env
+.env.*
+cookies.txt
+*.mp4
+*.mp3
+*.webm
+*.mkv
+downloads/
+temp/

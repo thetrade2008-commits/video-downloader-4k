@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Downloader 4K</title>
+
+    <meta name="description" content="Fast and simple 4K video downloader.">
+    <meta name="theme-color" content="#0b0f19">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">⬇</span>
+            <span>YouTube video downloader <b>4K</b></span>
+        </div>
+
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    ⚡ Fast • Simple • Free
+                </div>
+
+                <h1>
+                    All Videos<br>
+                    <span>Download in 4K Quality</span>
+                </h1>
+
+
+                <!-- SOCIAL MEDIA NAMES -->
+
+                <div class="social-names">
+                    YouTube, Instagram, TikTok, Facebook, Chrome, Reddit, Quora, RedNote, Kuaishou And aslo a lot
+                </div>
+
+
+                <!-- SOCIAL MEDIA LOGOS -->
+
+                <div class="social-platforms">
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube">
+                    </div>
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram">
+                    </div>
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/tiktok/FFFFFF" alt="TikTok">
+                    </div>
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/facebook/0866FF" alt="Facebook">
+                    </div>
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/googlechrome/4285F4" alt="Chrome">
+                    </div>
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/reddit/FF4500" alt="Reddit">
+                    </div>
+
+                    <div class="social-icon">
+                        <img src="https://cdn.simpleicons.org/quora/B92B27" alt="Quora">
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION BELOW LOGOS -->
+
+                <p class="hero-text">
+                    Paste your video link below and download your video quickly and easily.
+                </p>
+
+
+                <!-- DOWNLOAD BOX -->
+
+                <div class="download-box">
+
+                    <!-- URL INPUT -->
+
+                    <div class="input-wrapper">
+
+                        <span class="link-icon">🔗</span>
+
+                        <input
+                            type="url"
+                            id="videoUrl"
+                            placeholder="Paste Your video URL here..."
+                            autocomplete="off"
+                        >
+
+                        <button
+                            class="clear-btn"
+                            id="clearBtn"
+                            type="button"
+                            title="Clear"
+                        >×</button>
+
+                    </div>
+
+
+                    <!-- MAIN DOWNLOAD BUTTON -->
+
+                    <button
+                        class="download-btn"
+                        id="downloadBtn"
+                        type="button"
+                    >
+                        <span>Download</span>
+                        <span class="arrow">↓</span>
+                    </button>
+
+
+                    <!-- DOWNLOAD RESULT -->
+
+                    <div class="download-result" id="downloadResult">
+
+                        <!-- VIDEO INFORMATION -->
+
+                        <div class="video-info">
+
+                            <div class="video-thumbnail">
+
+                                <img
+                                    id="videoThumbnail"
+                                    src=""
+                                    alt="Video thumbnail"
+                                >
+
+                                <span id="thumbnailPlaceholder">🎬</span>
+
+                            </div>
+
+                            <div class="video-details">
+                                <h3 id="videoTitle">Video title</h3>
+                            </div>
+
+                            <button
+                                class="max-download-btn"
+                                id="maxDownloadBtn"
+                                type="button"
+                            >
+                                Download
+                            </button>
+
+                        </div>
+
+
+                        <!-- MP4 SECTION -->
+
+                        <div class="format-section">
+
+                            <div class="format-heading">
+                                <span class="format-icon">🎬</span>
+                                <span>MP4</span>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">360p</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp4" data-quality="360p">
+                                    Download
+                                </button>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">480p</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp4" data-quality="480p">
+                                    Download
+                                </button>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">720p</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp4" data-quality="720p">
+                                    Download
+                                </button>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">1080p</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp4" data-quality="1080p">
+                                    Download
+                                </button>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">4K</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp4" data-quality="2160p">
+                                    Download
+                                </button>
+                            </div>
+
+                        </div>
+
+
+                        <!-- MP3 SECTION -->
+
+                        <div class="format-section mp3-section">
+
+                            <div class="format-heading">
+                                <span class="format-icon">🎵</span>
+                                <span>MP3</span>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">128k</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp3" data-quality="128k">
+                                    Download
+                                </button>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">192k</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp3" data-quality="192k">
+                                    Download
+                                </button>
+                            </div>
+
+                            <div class="download-option">
+                                <div class="quality-name">320k</div>
+                                <button class="quality-download" type="button"
+                                    data-format="mp3" data-quality="320k">
+                                    Download
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STATUS -->
+
+                    <div class="status" id="status">
+                        <span class="status-dot"></span>
+                        <span id="statusText">Ready to download</span>
+                    </div>
+
+
+                    <!-- SUPPORTED -->
+
+                    <div class="supported">
+                        <span>✓ No registration</span>
+                        <span>✓ Fast processing</span>
+                        <span>✓ Easy to use</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS -->
+
+        <section class="section" id="how-it-works">
+
+            <div class="section-title">
+
+                <span class="small-label">HOW IT WORKS</span>
+
+                <h2>Download in 3 simple steps</h2>
+
+                <p>Getting your video is quick and easy.</p>
+
+            </div>
+
+            <div class="steps">
+
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">🔗</div>
+                    <h3>Copy the link</h3>
+                    <p>Copy the URL of the video you want to download.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">📋</div>
+                    <h3>Paste the link</h3>
+                    <p>Paste the video URL into the box above.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">⬇️</div>
+                    <h3>Choose & Download</h3>
+                    <p>Choose your preferred quality or audio format and download.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section class="section features-section">
+
+            <div class="section-title">
+                <span class="small-label">FEATURES</span>
+                <h2>Everything you need</h2>
+            </div>
+
+            <div class="features">
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Downloads</h3>
+                    <p>Designed for a quick and simple downloading experience.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎥</div>
+                    <h3>High Quality</h3>
+                    <p>Support for high-quality video downloads when available.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works with a clean interface on phones, tablets and desktops.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Simple & Private</h3>
+                    <p>No unnecessary account creation or complicated setup.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="section about-section" id="about">
+
+            <div class="about-card">
+
+                <span class="small-label">ABOUT</span>
+
+                <h2>Video Downloader 4K</h2>
+
+                <p>
+                    A simple video downloading interface built to make
+                    the downloading process easy and straightforward.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            ⬇ Video Downloader <b>4K</b>
+        </div>
+
+        <p>© 2026 Video Downloader 4K. All rights reserved.</p>
+
+        <p class="footer-note">
+            Use this service only for videos you have permission to download.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
