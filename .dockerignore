@@ -1,0 +1,13 @@
+node_modules
+.git
+info.json
+*.wrong-backup
+.env
+.env.*
+cookies.txt
+downloads
+temp
+*.mp4
+*.mp3
+*.webm
+*.mkv
